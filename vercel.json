@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "hospitalapp/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/hospitalapp/wsgi.py"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "hospital.settings",
+    "SECRET_KEY": "django-insecure-ist1zim=994qxocv(@7ildad5u4_n09r0f8p293t*8of^@$e-x",
+    "DEBUG": "false"
+  }
+}
