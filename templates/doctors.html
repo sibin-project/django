@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Doctors{% endblock title %}
+{% load static %}
+{% block content %} 
+<link rel="stylesheet" href="{% static 'css/doctor.css' %}">
+<div class="container p-5">
+    <h1 style="color: #007bff;" class="mb-4 text-center">Doctor List</h1>
+    <div class="row"> {% for doctor in doc %} <div class="col-md-4">
+
+            <div class="card mb-4 shadow-sm"> 
+                <img src="{{ doctor.doc_image.url }}" class="card-img-top img-fluid" alt="Doctor Image">
+                <div class="card-body text-center text-capitalize">
+                    <h5 class="card-title">{{ doctor.doc_name }}</h5>
+                    <p class="card-text"><strong>Department:</strong> {{ doctor.doc_department }}</p>
+                    <p class="card-text">{{ doctor.doc_description }}</p>
+                    <p class="card-text"><strong>Specialization:</strong> {{ doctor.doc_specialization }}</p>
+                    <p class="card-text"><strong>Experience:</strong> {{ doctor.doc_experience }} years</p>
+                    <p class="card-text"><strong>Consultation Fee:</strong> ₹{{ doctor.doc_fee }}</p>
+                </div>
+            </div>
+        </div> {% endfor %} </div>
+</div>
+{% endblock content %}

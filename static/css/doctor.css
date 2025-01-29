@@ -1,0 +1,46 @@
+
+
+.container {
+    margin:0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    border: none; /* remove border */
+    border-radius: 10px; /* rounded corners */
+    overflow: hidden; /* ensures image stays within rounded corners */
+    transition: transform 0.2s ease-in-out;
+    height: 500px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.img-fluid{
+    height: 40%;
+}
+
+.card:hover {
+    transform: scale(1.05); /* slight zoom effect on hover */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* rounded corners for the top image */
+}
+
+.card-body {
+    padding: 20px; /* padding inside the card body */
+}
+
+.card-title {
+    font-size: 1.25rem; /* slightly larger title font size */
+    color: #007bff; /* blue color for the title */
+}
+
+.card-text {
+    color: #555555; /* grey color for text */
+}
+
+.card-text strong {
+    color: #333333; /* darker color for strong text */
+}

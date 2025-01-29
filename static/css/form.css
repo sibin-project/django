@@ -1,0 +1,39 @@
+.form-container {
+
+    border-radius: 8px;
+    /* rounded corners */
+    padding: 20px;
+    /* padding inside the form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* subtle shadow for depth */
+    max-width: 500px;
+    /* max width for the form container */
+    width: 100%;
+    /* full width for smaller screens */
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    margin-bottom: 15px;
+    /* space between form elements */
+    padding: 10px;
+    /* padding inside form elements */
+    border: 1px solid #dddddd;
+    /* light border for form elements */
+    border-radius: 4px;
+    /* rounded corners for form elements */
+}
+
+.form-container button {
+    align-self: center;
+    /* center the submit button */
+    padding: 10px 20px;
+    /* padding for the submit button */
+}
+.error { color: red; }

@@ -1,0 +1,44 @@
+
+
+.jumbotron {
+    padding: 2rem 1rem; /* Padding for the jumbotron */
+    border-radius: 8px; /* Rounded corners for the jumbotron */
+}
+
+.jumbotron h1 {
+    font-size: 3rem; /* Large font size for the main heading */
+}
+
+.jumbotron p {
+    font-size: 1.25rem; /* Larger font size for the lead paragraph */
+}
+
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 8px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensure image stays within rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease-in-out;
+    height: 250px !important;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top image */
+}
+
+.card-body {
+    padding: 1.5rem; /* Padding inside the card body */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Slightly larger title font size */
+    color: #007bff; /* Blue color for the title */
+}
+
+.card-text {
+    color: #555555; /* Grey color for text */
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: #e3f2fd; /* light blue background for the department page */
+}
+
+h1 {
+    color: #0d47a1; /* dark blue color for the main heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.department-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.department-card {
+    background-color: #ffffff; /* white background for department cards */
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-10px); /* lift effect on hover */
+}
+
+.department-card h2 {
+    color: #0d47a1; /* matching dark blue for department headings */
+    margin-bottom: 10px;
+}
+
+.department-card p {
+    color: #555555; /* grey color for department descriptions */
+}

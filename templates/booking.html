@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Booking{% endblock title %}
+{% load static %}
+{% block content %} 
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<div class="container w-100 d-flex justify-content-center align-items-center flex-column" style="min-height: 80vh;">
+    <h1 style="color: #007bff;"> Booking</h1>
+    <div class="form-container m-3 p-4 shadow-lg rounded">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-outline-primary mt-3 mb-5">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="{% static 'js/booking.js' %}"></script>
+
+{% endblock content %}
